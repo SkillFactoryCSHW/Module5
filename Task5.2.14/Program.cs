@@ -2,9 +2,9 @@
 SortArray(array);
 ShowArray(array);
 
-static int[] GetArrayFromConsole()
+static int[] GetArrayFromConsole(int num = 5)
 {
-    int[] array = new int[5];
+    int[] array = new int[num];
 
     for (int i = 0; i < array.Length; i++)
     {
@@ -35,7 +35,7 @@ static int[] SortArray(int[] array)
 static void ShowArray(int[] array)
 {
     foreach (int i in array)
-        {
+    {
         Console.Write(i + " ");
-        }
+    }
 }
