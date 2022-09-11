@@ -1,15 +1,14 @@
 ﻿int[] array = { 3, 1, 4, 2, 5 };
-bool sortarray = true;
-ShowArray(array, sortarray);
+ShowArray(array);
 
-static void ShowArray(int[] array, bool sortarray = false)
+static void ShowArray(int[] array, bool sortarray = true)
 {
     if(sortarray)
     {
         int temp;
         for (int j = 0; j < array.Length; j++)
         {
-            for (int i = 0; i < array.Length; i++)
+            for (int i = 0; i < array.Length - 1; i++)
             {
                 if (array[i + 1] < array[i])
                 {
@@ -18,6 +17,10 @@ static void ShowArray(int[] array, bool sortarray = false)
                     array[i] = temp;
                 }
             }
+        }
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write(array[i] + " ");
         }
     }
     else
