@@ -45,7 +45,7 @@ static string[] PetNamesList(byte PetNum)
     }
     return arrayPetNames;
 }
-//Show pets name
+//Show pets names
 static void ShowArrayPet(string[] arrayPetNames)
 {
     for (int i = 0; i < arrayPetNames.Length; i++)
